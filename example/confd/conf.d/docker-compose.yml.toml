@@ -1,0 +1,5 @@
+[template]
+src = "docker-compose.yml.tmpl"
+dest = "/app/docker-compose.yml"
+keys = [ "/apps" ]
+reload_cmd = "cd /app; docker-compose pull; docker-compose up -d"

@@ -1,0 +1,7 @@
+version: '2'
+services:
+  web:
+    image: nginx:{{getv "/apps/web"}}
+    ports:
+      - "8085:80"
+    restart: always
