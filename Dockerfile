@@ -6,7 +6,6 @@ RUN apk update && \
     pip install docker-compose && \
     rm -rf /var/cache/apk/*
 
-VOLUME /app
 VOLUME /etc/confd
 VOLUME /etc/consul
 VOLUME /var/lib/consul
